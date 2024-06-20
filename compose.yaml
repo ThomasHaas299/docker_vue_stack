@@ -8,6 +8,7 @@ services:
       target: development-stage
     ports:
       - 80:80
-    #volumes:
-    #  - .:/app
+    volumes:
+      # Das Volume wird nur in der development-stage benötigt
+      - ./frontend:/app
     #  - /app/frontend/node_modules

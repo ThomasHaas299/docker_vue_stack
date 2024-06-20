@@ -3,9 +3,9 @@ WORKDIR /app
 
 #dev stage
 FROM base as development-stage
-COPY package*.json ./
-RUN npm install
-COPY . .
+#COPY package*.json ./
+#RUN npm install
+#COPY . .
 EXPOSE 80
 CMD ["npm", "run", "dev"]
 
