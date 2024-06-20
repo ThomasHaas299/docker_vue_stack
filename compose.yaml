@@ -1,0 +1,13 @@
+services:
+  frontend:
+    container_name: docker-vue01-frontend
+    image: docker-vue01-frontend:1
+    build:
+      context: frontend
+      #target: production-stage
+      target: development-stage
+    ports:
+      - 80:80
+    #volumes:
+    #  - .:/app
+    #  - /app/frontend/node_modules
