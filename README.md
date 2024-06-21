@@ -35,6 +35,12 @@ Durch die Angabe von `--host` wird das Ganze nach außen weitergereicht und ich 
 
 # Dockerisierung
 
+In `compose.yaml` wählt man unter services:frontent:build das entsprechende target, entweder development-stage oder production-stage.
+
+# Frontend
+
 Anpassung in `package.json`: `"dev": "vite --host --port 80"`. Hier wurde "host" und "port" hinzugefügt.
 
-In `compose.yaml` wählt man unter services:frontent:build das entsprechende target, entweder development-stage oder production-stage.`
+# Backend
+
+Das Backend habe ich erst einmal hiervon genommen: https://dev.to/fizy_hector/-containerizing-your-full-stack-node-app-using-docker-compose-4lnk

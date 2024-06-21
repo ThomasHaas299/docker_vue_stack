@@ -12,3 +12,16 @@ services:
       # Das Volume wird nur in der development-stage benötigt
       - ./frontend:/app
     #  - /app/frontend/node_modules
+
+  backend:
+    container_name: docker-vue01-backend
+    image: docker-vue01-backend:1
+    build:
+      context: backend
+      target: development-stage
+    ports:
+      - 8000:8000
+    volumes:
+      - ./backend:/app
+    #  - /app/backend/node_modules
+    
