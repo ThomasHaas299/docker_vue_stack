@@ -35,5 +35,8 @@ const selectRandomElement = () => {
   }
 }
 
-onMounted(fetchData)
+// fetchData nicht sofort ausführen, sondern erst nach 300 ms
+onMounted(() => setTimeout(fetchData, 300))
+
+
 </script>
